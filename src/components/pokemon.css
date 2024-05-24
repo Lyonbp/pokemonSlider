@@ -1,0 +1,52 @@
+.pokemon {
+  min-height: 70vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider {
+  position: relative;
+  min-width: 200vh;
+  height: 490px;
+  overflow: hidden;
+}
+.item {
+  position: absolute;
+  width: 40vh;
+  height: 50vh;
+  text-align: justify;
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  background: linear-gradient(
+    to bottom,
+    rgba(184, 203, 237, 1) 0%,
+    rgba(222, 245, 221, 1) 100%
+  );
+  transition: 0.5s;
+  left: calc(50% - 110px);
+  top: 0;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+#next,
+#prev {
+  position: absolute;
+  top: 40%;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  font-size: 5vh;
+  font-family: monospace;
+  font-weight: bold;
+  left: 400px;
+}
+#next {
+  left: unset;
+  right: 400px;
+}
