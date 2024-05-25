@@ -2,5 +2,9 @@ export type Pokemon = {
     name: string;
     id: string;
     imgSrc: string;
-    national_number:any
+    hp: string;
+    type:string;
+    attack:string;
+    defense: string,
+    
   };

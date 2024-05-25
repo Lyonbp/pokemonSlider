@@ -3,6 +3,7 @@ export async function buttonsPokemon() {
     const items = document.querySelectorAll<HTMLDivElement>('.slider .item');
     const next = document.getElementById('next') as HTMLButtonElement;
     const prev = document.getElementById('prev') as HTMLButtonElement;
+
   
     let active = 2;
   

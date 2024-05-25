@@ -17,6 +17,10 @@ export async function fetchPokemons(): Promise<Pokemon[]> {
     imgSrc: `https://img.pokemondb.net/sprites/black-white/anim/normal/${formatName(
       pokemon.name.toLowerCase()
     )}.gif`,
+    hp: pokemon.hp,
+    attack:pokemon.attack,
+    defense:pokemon.defense,
+    type:Array.isArray(pokemon.type)? pokemon.type.join(" - "):pokemon.type
   }));
 
   const uniquePokemons = pokemons.filter(
